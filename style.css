@@ -1,0 +1,150 @@
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+	min-height: 100%;
+}
+html, body, h1, h2, p, ul, ol {
+	margin: 0;
+	padding: 0;
+}
+body {
+	color: #000;
+	font-family: 'Oxygen', Arial, sans-serif;
+	font-size:12px;
+	line-height: 1.4em;
+	height: 100%;
+}
+h1 {
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 1.5em;
+	margin: auto;
+	max-width: 900px;
+	padding: 0 20px;
+}
+p {
+
+}
+a {
+	color: #000;
+	text-decoration: none;
+}
+a:hover {
+	color:#666;
+	text-decoration :underline;
+}
+img {
+	max-width: 100%;
+}
+/***** GRID *****/
+.overlay {
+	position: absolute;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	top: 50%;
+	width: 100%;
+}
+.site-wrapper {
+	margin: 50px auto 0;
+	max-width: 1000px;
+	padding: 0 20px 40px;
+	position: relative;
+	width: 100%;
+}
+.grid {
+	clear: both;
+	display: block;
+	float: none;
+	overflow: hidden;
+	width: 100%;
+}
+.col-1-2 {
+	width: 50%;
+	float: left;
+}
+.clear {
+	clear: both;
+	display: block;
+	float: none;
+}
+/***** HEADER *****/
+.header {
+	padding: 0 0 20px;
+}
+.col-left a {
+	margin-right: 30px;
+}
+.col-right {
+	text-align: right;
+}
+.back-link {
+	position: absolute;
+	left: -10px;
+	top: 2px;
+}
+/***** GALLERY *****/
+.paginationstyle { /*Style for demo pagination divs*/
+	width: 600px;
+	text-align: center;
+	padding: 0px 0px;
+	margin: auto;
+}
+.paginationstyle select{ /*Style for demo pagination divs' select menu*/
+	margin: 0 15px;
+}
+.hidepiece img {
+	padding-bottom:25px;
+}
+.paginationstyle a{ /*Pagination links style*/
+	padding: 0 5px;
+	text-decoration: none;
+	color: #000;
+	background-color: white;
+}
+.paginationstyle a:hover, .paginationstyle a.selected{
+	color: #666;
+}
+
+.paginationstyle a.disabled, .paginationstyle a.disabled:hover{ /*Style for "disabled" previous or next link*/
+background-color: white;
+cursor: default;
+border-color: transparent;
+}
+
+.paginationstyle a.imglinks{ /*Pagination Image links style (class="imglinks") */
+border: 0;
+padding: 0;
+}
+
+.paginationstyle a.imglinks img{
+vertical-align: bottom;
+border: 0;
+}
+
+.paginationstyle a.imglinks a:hover{
+background: none;
+}
+
+.paginationstyle a.disabled, .paginationstyle a.disabled:hover{ /*Style for "disabled" previous or next link*/
+  visibility:hidden;
+}
+
+.paginationstyle .flatview a:hover, .paginationstyle .flatview a.selected{ /*Pagination div "flatview" links style*/
+color: #000;
+background-color: yellow;
+}
+
+.hidepiece p {
+	text-align:center;
+}
+
+.hidepiece {
+	height:460px;
+}
+
+.virtualpage3 {
+	vertical-align:bottom;
+  }
