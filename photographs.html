@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Photographs | Seth DeCiantis</title>
+<meta name="description" content="Photographs">
+
+<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+	<div class="site-wrapper">
+		<header class="header">
+			<nav class="grid">
+				<div class="col-1-2 col-left">
+					<a href="photographs.html">Photographs</a>
+					<a href="http://dandetiger.github.io/sethdeciantis.github.io/">Drawings</a>
+				</div>
+				<div class="col-1-2 col-right">
+					<a href="info.html">Info</a>
+				</div>
+			</nav>
+		</header>
+		<main class="main-wrapper">
+			<div class="slides" id="slides">
+
+				<p class="image-panel hidepiece">
+				<img src="images/photographs/01_my_legs_guide_my_vision_2012.jpg" class="gallery-image" /></p>
+				<p class="image-panel hidepiece">
+				<img src="images/photographs/02_beauty_2014.jpg" class="gallery-image" /></p>
+				<p class="image-panel hidepiece">
+				<img src="images/photographs/03_blue_morning_2013.jpg" class="gallery-image" /></p>
+				<p class="image-panel hidepiece">
+				<img src="images/photographs/04_aged_orange_2013.jpg" class="gallery-image" /></p>
+				<p class="image-panel hidepiece">
+				<img src="images/photographs/05_convenience_2013.jpg" class="gallery-image" /></p>
+				<p class="image-panel hidepiece">
+				<img src="images/photographs/06_demolished_past_2013.jpg" class="gallery-image" /></p>
+				<p class="image-panel hidepiece">
+				<img src="images/photographs/07_house_needs_2013.jpg" class="gallery-image" /></p>
+				<p class="image-panel hidepiece">
+				<img src="images/photographs/08_together_lost_2014.jpg" class="gallery-image" /></p>
+				<p class="image-panel hidepiece">
+				<img src="images/photographs/09_maintenance_colors_2014.jpg" class="gallery-image" /></p>
+				<p class="image-panel hidepiece">
+				<img src="images/photographs/10_guard_2012.jpg" class="gallery-image" /></p>
+				<p class="image-panel hidepiece">
+				<img src="images/photographs/11_pink_staircase_2014.jpg" class="gallery-image" /></p>
+				<p class="image-panel hidepiece">
+				<img src="images/photographs/12_bump_2014.jpg" class="gallery-image" /></p>
+				<p class="image-panel hidepiece">
+				<img src="images/photographs/13_crash_2014.jpg" class="gallery-image" /></p>
+				<p class="image-panel hidepiece">
+				<img src="images/photographs/14_green_in_the_middle_2013.jpg" class="gallery-image" /></p>
+				<p class="image-panel hidepiece">
+				<img src="images/photographs/15_broken_2014.jpg" class="gallery-image" /></p>
+				<p class="image-panel hidepiece">
+				<img src="images/photographs/16_cheap_work_2012.jpg" class="gallery-image" /></p>
+				<p class="image-panel hidepiece">
+				<img src="images/photographs/17_disposed_thirst_2013.jpg" class="gallery-image" /></p>
+				<p class="image-panel hidepiece">
+				<img src="images/photographs/18_express_2_2013.jpg" class="gallery-image" /></p>
+				<p class="image-panel hidepiece">
+				<img src="images/photographs/19_mission_bay_2014.jpg" class="gallery-image" /></p>
+				<p class="image-panel hidepiece">
+				<img src="images/photographs/20_yellow_cadillac_2012.jpg" class="gallery-image" /></p>
+			</div>
+
+			<div id="listingpaginate" class="paginationstyle">
+				<a href="#" rel="previous" class="imglinks"><img src="images/left.png" style="padding:0px 10px;"/></a>
+				<a href="#" rel="next" class="imglinks"><img src="images/right.png"  style="padding:0px 10px;"/></a>
+			</div>
+		</main>
+	</div>
+</body>
+
+<script type="text/javascript" src="js/virtualpaginate.js">
+
+/***********************************************
+* Virtual Pagination script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+var gallery = new virtualpaginate({
+	piececlass: "image-panel",
+	piececontainer: 'p',
+	defaultpage: 0,
+	wraparound: false,
+	persist: false
+})
+
+gallery.buildpagination(["listingpaginate"]);
+
+function maxImageHeight() {
+	var images = document.getElementsByClassName('gallery-image');
+	console.log(images);
+	images.forEach(function(imgHeight) {
+		console.log(imgHeight)
+	});
+}
+maxImageHeight();
+
+</script>
+
+</html>
