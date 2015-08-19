@@ -62,8 +62,13 @@ img {
 	width: 100%;
 }
 .col-1-2 {
-	width: 50%;
 	float: left;
+}
+.col-left {
+	width: 60%;
+}
+.col-right {
+	width: 40%;
 }
 .clear {
 	clear: both;
@@ -95,6 +100,16 @@ img {
 	height: 675px;
 	overflow: hidden;
 	width: 100%;
+}
+@media (max-width: 800px) {
+	.slides {
+		height: 540px;
+	}
+}
+@media (max-width: 550px) {
+	.slides {
+		height: 380px;
+	}
 }
 .hidepiece {
 	height: 100%;
