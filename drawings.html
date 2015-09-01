@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Photographs | Seth DeCiantis</title>
+<meta name="description" content="Photographs">
+
+<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+	<div class="site-wrapper">
+		<header class="header">
+			<nav class="grid">
+				<div class="col-1-2 col-left">
+					<a href="photographs.html">Photographs</a>
+					<a href="drawings.html">Drawings</a>
+				</div>
+				<div class="col-1-2 col-right">
+					<a href="info.html">Info</a>
+				</div>
+			</nav>
+		</header>
+		<main class="main-wrapper">
+			<div class="slides" id="slides">
+
+                <p class="image-panel hidepiece">
+                    <img src="images/drawings/drawing_1.jpeg" class="gallery-image" /></p>
+                <p class="image-panel hidepiece">
+                    <img src="images/drawings/drawing_2.jpeg" class="gallery-image" /></p>
+                <p class="image-panel hidepiece">
+                <img src="images/drawings/drawing_3.jpeg" class="gallery-image" /></p>
+                <p class="image-panel hidepiece">
+                    <img src="images/drawings/drawing_4.jpeg" class="gallery-image" /></p>
+                <p class="image-panel hidepiece">
+                    <img src="images/drawings/drawing_5.jpeg" class="gallery-image" /></p>
+                <p class="image-panel hidepiece">
+                    <img src="images/drawings/drawing_6.jpeg" class="gallery-image" /></p>
+                <p class="image-panel hidepiece">
+                    <img src="images/drawings/drawing_7.jpeg" class="gallery-image" /></p>
+                <p class="image-panel hidepiece">
+                    <img src="images/drawings/drawing_8.jpeg" class="gallery-image" /></p>
+                <p class="image-panel hidepiece">
+                    <img src="images/drawings/drawing_9.jpeg" class="gallery-image" /></p>
+                <p class="image-panel hidepiece">
+                    <img src="images/drawings/drawing_10.jpeg" class="gallery-image" /></p>
+                <p class="image-panel hidepiece">
+                    <img src="images/drawings/drawing_11.jpeg" class="gallery-image" /></p>
+                <p class="image-panel hidepiece">
+                    <img src="images/drawings/drawing_12.jpeg" class="gallery-image" /></p>
+                <p class="image-panel hidepiece">
+                    <img src="images/drawings/drawing_13.jpeg" class="gallery-image" /></p>
+                <p class="image-panel hidepiece">
+                    <img src="images/drawings/drawing_14.jpeg" class="gallery-image" /></p>
+                <p class="image-panel hidepiece">
+                    <img src="images/drawings/drawing_15.jpeg" class="gallery-image" /></p>
+                <p class="image-panel hidepiece">
+                    <img src="images/drawings/drawing_16.jpeg" class="gallery-image" /></p>
+                <p class="image-panel hidepiece">
+                    <img src="images/drawings/drawing_17.jpeg" class="gallery-image" /></p>
+			</div>
+
+			<div id="listingpaginate" class="paginationstyle">
+				<a href="#" rel="previous" class="imglinks"><img src="images/left.png" style="padding:0px 10px;"/></a>
+				<a href="#" rel="next" class="imglinks"><img src="images/right.png"  style="padding:0px 10px;"/></a>
+			</div>
+		</main>
+	</div>
+</body>
+
+<script type="text/javascript" src="js/virtualpaginate.js">
+
+/***********************************************
+* Virtual Pagination script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+var gallery = new virtualpaginate({
+	piececlass: "image-panel",
+	piececontainer: 'p',
+	defaultpage: 0,
+	wraparound: false,
+	persist: false
+})
+
+gallery.buildpagination(["listingpaginate"]);
+
+function maxImageHeight() {
+	var images = document.getElementsByClassName('gallery-image');
+	console.log(images);
+	images.forEach(function(imgHeight) {
+		console.log(imgHeight)
+	});
+}
+//maxImageHeight();
+
+</script>
+
+</html>
