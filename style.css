@@ -48,18 +48,6 @@ img {
 	top: 50%;
 	width: 100%;
 }
-.site-wrapper {
-	margin: 50px auto 0;
-	max-width: 1000px;
-	padding: 0 20px 40px;
-	position: relative;
-	width: 100%;
-}
-@media (max-width: 600px) {
-	.site-wrapper {
-		margin-top: 30px;
-	}
-}
 .grid {
 	clear: both;
 	display: block;
@@ -137,14 +125,25 @@ img {
 	cursor: default;
 	visibility:hidden;
 }
-
+.site-wrapper {
+	margin: 50px auto 0;
+	max-width: 1000px;
+	padding: 0 20px 40px;
+	position: relative;
+	width: 100%;
+}
 .site-wrapper {
 	position: absolute;
-height: 100%;
-left: 0;
-right: 0;
-margin: 50px auto 0;
-padding-bottom: 0;
+	height: 100%;
+	left: 0;
+	right: 0;
+	margin: 50px auto 0;
+	padding-bottom: 0;
+}
+@media (max-width: 600px) {
+	.site-wrapper {
+		margin-top: 30px;
+	}
 }
 .main-wrapper {
 	position: relative;
