@@ -162,3 +162,8 @@ height: 100%;
 .imglinks img {
 	padding: 0 15px;
 }
+@media (max-width: 600px) {
+	.imglinks img {
+		padding: 0 25px;
+	}
+}
