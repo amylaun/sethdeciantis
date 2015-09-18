@@ -55,6 +55,11 @@ img {
 	position: relative;
 	width: 100%;
 }
+@media (max-width: 600px) {
+	.site-wrapper {
+		margin-top: 30px;
+	}
+}
 .grid {
 	clear: both;
 	display: block;
@@ -162,9 +167,4 @@ height: 100%;
 }
 .imglinks img {
 	padding: 0 15px;
-}
-@media (max-width: 600px) {
-	.imglinks img {
-		padding: 0 25px;
-	}
 }
